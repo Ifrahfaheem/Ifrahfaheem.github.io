@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contatc Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="website icon" type="png" href="logo.jpeg">
+  
+</head>
+<style>
+span{
+  color: red;
+}
+
+/*-------------------------------------------------*/
+/* =  Navigation
+/*-------------------------------------------------*/
+
+.nav-border {
+  border-top: 1px solid #e4e4e4;
+}
+
+#nav {
+display: table;
+margin: 0 auto;
+}
+
+#nav {
+  position: relative;
+}
+
+#nav > select {
+  display: none;
+}
+
+ul#navlist {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  padding-top: 0px;
+}
+
+ul#navlist li {
+  float: left;
+  position: relative;
+}
+
+ul#navlist > li {
+  margin: 0 0px;
+}
+
+
+ul#navlist li a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.17s ease-in-out;
+  -moz-transition: all 0.17s ease-in-out;
+  -webkit-transition: all 0.17s ease-in-out;
+  -o-transition: all 0.17s ease-in-out;
+  color: #555555;
+  font-family: 'Noticia Text', serif;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  outline: 0;
+}
+
+
+ul#navlist > li.current a, ul#navlist li a:hover{
+  color: #ea5748;
+}
+
+
+
+/* DropDown Menu = Superfish */
+.sf-menu {
+  line-height: 1.0;
+  overflow: visible !important;
+}
+
+.sf-menu .sub-menu {
+  position: absolute;
+  top: -999em;
+  width: 175px; /* left offset of submenus need to match (see below) */
+  margin: 0 !important;
+  padding-left: 0;
+  padding-top: 0px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.sf-menu li:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.sf-menu ul li {
+  width: 100%;
+}
+
+.sf-menu li:hover {
+  visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+
+.sf-menu li {
+  float: left;
+  position: relative;
+}
+
+.sf-menu a {
+  display: block;
+  position: relative;
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+  left: 0;
+  top: auto; /* match top ul list item height */
+  z-index: 99;
+}
+
+.sf-menu li:hover li ul,
+.sf-menu li.sfHover li ul {
+  top: -999em;
+}
+
+.sf-menu li li:hover ul,
+.sf-menu li li.sfHover ul {
+  left: 100%; /* match ul width */
+  top: 0;
+}
+
+.sf-menu li li:hover li ul,
+.sf-menu li li.sfHover li ul {
+  top: -999em;
+}
+
+.sf-menu li li li:hover ul,
+.sf-menu li li li.sfHover ul {
+  left: 100%; /* match ul width */
+  top: 0;
+}
+
+.sf-menu .sub-menu {
+  overflow: visible !important;
+}
+
+.sf-menu .sub-menu li {
+  padding-right: 0;
+  list-style: none;
+}
+
+.sf-menu .sub-menu li:after {
+  display: none;
+}
+.sf-menu .sub-menu li:before {
+  display: none;
+}
+
+
+.sf-menu .sub-menu a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.17s ease-in-out;
+  -moz-transition: all 0.17s ease-in-out;
+  -webkit-transition: all 0.17s ease-in-out;
+  -o-transition: all 0.17s ease-in-out;
+  display: block;
+  color: #555555 !important;
+  font-size: 12px !important  ;
+  font-family: 'Ubuntu', serif !important;
+  padding: 12px 12px !important;
+  font-weight: 300;
+  background: #fff !important;
+  margin: 0;
+  border: none;
+  width: 100%;
+  border: 0 !important;
+}
+
+.sf-menu .sub-menu a:hover {
+  color: #ea5748!important;
+  border: 0 !important;
+}
+
+
+.sub-menu span{
+  display: none;
+}
+
+#content {
+  background: #f7f7f7;
+  padding-top: 30px;
+}
+
+.content {
+  background: #f7f7f7;
+  padding-top: 30px;
+}
+
+
+.short-tabs {
+  padding: 60px 0;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 50px
+}
+
+.title h1 {
+  color: #000;
+  font-size: 28px;
+  font-family: 'Noticia Text';
+  font-weight: bold;
+  text-transform: uppercase;
+  display: table;
+  padding: 10px;
+  background: #f7f7f7;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title i {
+  padding: 15px;
+  font-size: 16px;
+  color: #000;
+  vertical-align: 3px;
+}
+
+.title-border {
+  border-top: 1px solid #929292;
+  margin-top: -34px;
+
+}
+/* ------------foam styling------ */
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body{
+  height: 130vh;
+  width: 100%;
+}
+
+.main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  left: 0;
+  top: 0;
+  background:linear-gradient(rgba(10, 10, 10, 10), rgba(10, 0, 0, 0.10)), url("") no-repeat center;
+  background-size: cover;
+  /* filter: blur(30px); */
+  z-index: -1;
+ 
+}
+#main-box{
+    border-radius: 10px;
+  
+  display: grid;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background:linear-gradient(rgba(0, 0, 5, 0.10), rgba(0, 0, 5, 0.30)),no-repeat;; */
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+
+  
+}
+
+.right{
+  padding: 25px 40px;
+}
+h1{
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+    
+ 
+}
+
+h1:after{
+  content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 4px;
+    width: 300px;
+    border-radius: 2px;
+    
+}
+
+.foam{
+  width: 100%;
+  border: 2px solid rgba(5, 5, 5, 5);
+  outline: none;
+  background-color: rgba(500, 500, 500, 0.80);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+
+.foam:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+  min-height: 150px;
+}
+
+.btn2{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn2:hover{
+    background-color: #27ae60;
+}
+
+.foam:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+iframe{
+    filter:invert(100%) ;
+}
+h5{
+  color:white;
+}
+.dropdown-item:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  border: none;
+}
+.footer_inner {
+ 
+  backdrop-filter: blur(50px);
+  border: 0.1px solid rgba(233, 232, 232, 0.208);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem 0;
+  margin-top:70px;
+  color: white;
+}
+.search-input {
+  float: left;
+  position: relative;
+}
+
+.search-input input[type="text"] {
+  border: 1px solid #e4e4e4;
+  padding: 10px;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  color: #424242;
+  font-size: 12px;
+  width: 250px;
+  background: #f7f7f7;
+}
+
+.search-input input[type="submit"] {
+  background: url(../images/search.png) 0 no-repeat;
+  width: 12px;
+  height: 11px;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  border:0;
+}
+.banner-footer .last-div {
+border-top: 1px solid #d4d4d4;
+padding: 30px 0;
+}
+
+.banner-footer .f-about input[type="text"] {
+font-size: 12px;
+font-family: 'Merriweather';
+font-style: italic;
+color: #b2b2b2;
+border: 1px solid #d4d4d4;
+width: 100%;
+padding: 12px;
+background: transparent;
+}
+
+.banner-footer .footer-socials i {
+display: inline-block;
+border: 1px solid #d4d4d4;
+width: 30px;
+height: 30px;
+line-height: 30px;
+text-align: center;
+font-size: 13px;
+color: #969696;
+}
+
+.banner-footer .infos a:hover {
+  color: #000;
+}
+
+
+.banner-footer .account a:hover {
+  color: #000;
+}
+</style>
+<body>
+ <!-- Container -->
+ <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    <img src="Logo.png" alt="">
+    </a>
+  </div><div class="search-input" style="left:760px;bottom: 20px;">
+        <form action="#">
+          <input type="text" placeholder="Type and Search">
+          <input type="submit" value="">
+        </form>
+      </div>
+      
+  </nav>
+      
+    
+<div id="container">
+  <div class="nav-border"></div>
+    <div class="container">
+     	<!-- Navigation -->
+				<nav id="nav">
+					<ul id="navlist" class="sf-menu clearfix">
+						<li class="current"><a href="index.html">Home</a>
+							<ul class="sub-menu">
+							</ul>
+						</li>
+						<li><a href="Shop/shop-grid.html">Shop</a>
+						</li>
+						<li><a href="gallery/gallery/gridgallery.html">Player Gallaries</a></li>
+						<li><a href="Top 10 scores/!0 scores/scores.html">Top 10 Scores</a></li>
+						<!-- <li><a href="Accessories.html">Accesories</a></li> -->
+						<li><a href="feedback/feedback.html">Feedback</a>
+							
+						</li>
+						<li><a href="ABOUT/about us.html">About US</a>
+						</li>
+						<li><a href="Contact Us.html">Contact Us</a></li>
+					</ul>
+				</nav>
+		    	<!-- Navigation -->
+    </div>
+  
+
+  </header>
+  <!-- End Header -->
+<br>
+<video class="video" muted="" loop="" autoplay src="video.mp4" type="video/mp4" height="1100px">
+    </video>
+  
+<div class="main">
+<br><br><br><br>
+<div class="container" id="main-box" style="display:flex ; text-align: center;">
+<div class="row align-items-start" >
+
+<h1 style="color: #fff;"><br>Contact Our Team</h1>
+<h5><br>Our team is happy:) to answer your sales questions. <br>
+Fill out the form and we'll be in touch as soon as possible.</h5><br><br>
+
+
+<div class="col" style="margin-top:30px; margin-left:1em ; height:450px ;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14486.610469854579!2d67.034935!3d24.807346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33da876b1d175%3A0x8503307ea3c31b78!2sClifton%20Art%20Gallery!5e0!3m2!1sen!2sus!4v1677976905620!5m2!1sen!2sus" width="100%" height="410" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="col-lg-6 col-md-12 col-sm-12" style="font-size: 25px;" >
+  
+  <div class="right">
+    
+    <div class="row align-items-start" >       
+
+
+<form id="contactForm" onsubmit="return validateForm()">
+    <input type="text" class="foam" placeholder="Your Name" id="username">
+    <span id="usernameError" style="font-size: 16px;"></span>
+
+    <input type="email" class="foam" placeholder="Your Email" id="emails">
+    <span id="emailError" style="font-size: 16px;"></span>
+
+    <input type="text" class="foam" placeholder="Phone" id="no">
+    <span id="phoneError" style="font-size: 16px;"></span>
+
+    <textarea placeholder="Message" class="foam" id="message"></textarea>
+    <span id="messageError" style="font-size: 16px;"></span>
+
+    <button class="btn2" type="submit">Submit</button>
+</form>
+
+<script>
+    function validateForm() {
+        var username = document.getElementById('username').value;
+        var emails = document.getElementById('emails').value;
+        var no = document.getElementById('no').value;
+        var message = document.getElementById('message').value;
+
+        var usernameRegex = /^[A-Za-z]+$/;
+        var emailRegex = /^\S+@\S+\.\S+$/;
+        var phoneRegex = /^[0-9]{11}$/;
+
+        // Reset error messages
+        document.getElementById('usernameError').textContent = '';
+        document.getElementById('emailError').textContent = '';
+        document.getElementById('phoneError').textContent = '';
+        document.getElementById('messageError').textContent = '';
+
+        //  username contains only alphabets
+        if (!username.match(usernameRegex)) {
+            document.getElementById('usernameError').textContent = 'Use Only Alphabets';
+            return false;
+        }
+
+        //email is valid
+        if (!emails.match(emailRegex)) {
+            document.getElementById('emailError').textContent = 'Please enter a valid email address';
+            return false;
+        }
+
+        //phone number is not empty and contains 11 digits only
+        if (no.trim() === '' || !no.match(phoneRegex)) {
+            document.getElementById('phoneError').textContent = 'Please enter a valid 11-digit phone number';
+            return false;
+        }
+
+        // message is not empty
+        if (message.trim() === '') {
+            document.getElementById('messageError').textContent = 'Please enter a message';
+            return false;
+        }
+
+        // If all validations pass, show success alert
+        alert('Form submitted successfully');
+        return true;
+    }
+</script>
+      
+</body>
+</html>

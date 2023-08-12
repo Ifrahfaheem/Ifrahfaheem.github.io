@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="gridgallery.css">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,800,900,200,100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">	
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="css/fullwidth.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+	
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- Style Switch -->
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/yellow-black.css" title="yellow" media="screen" />
+   	<link rel="alternate stylesheet" type="text/css" href="css/colors/violet-black.css" title="black" media="screen" />
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/orange-black.css" title="orange" media="screen" />
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/blue-black.css" title="blue" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/colors/red-black.css" title="red" media="screen" />
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/green-black.css" title="green" media="screen" />
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/pink-black.css" title="pink" media="screen" />
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/pale-green-black.css" title="pale-green" media="screen" />
+
+</head>
+<style>
+/*-------------------------------------------------*/
+/* =  Navigation
+/*-------------------------------------------------*/
+
+.nav-border {
+  border-top: 1px solid #e4e4e4;
+}
+
+#nav {
+display: table;
+margin: 0 auto;
+}
+
+#nav {
+  position: relative;
+}
+
+#nav > select {
+  display: none;
+}
+
+ul#navlist {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  padding-top: 0px;
+}
+
+ul#navlist li {
+  float: left;
+  position: relative;
+}
+
+ul#navlist > li {
+  margin: 0 0px;
+}
+
+
+ul#navlist li a {
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.17s ease-in-out;
+  -moz-transition: all 0.17s ease-in-out;
+  -webkit-transition: all 0.17s ease-in-out;
+  -o-transition: all 0.17s ease-in-out;
+  color: #555555;
+  font-family: 'Noticia Text', serif;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  outline: 0;
+}
+
+
+ul#navlist > li.current a, ul#navlist li a:hover{
+  color: #ea5748;}
+
+  .search-input {
+  float: left;
+  position: relative;
+}
+
+.search-input input[type="text"] {
+  border: 1px solid #e4e4e4;
+  padding: 10px;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  color: #424242;
+  font-size: 12px;
+  width: 250px;
+  background: #f7f7f7;
+  margin-left: 1000px;
+}
+
+.search-input input[type="submit"] {
+  background: url(../images/search.png) 0 no-repeat;
+  width: 12px;
+  height: 11px;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  border:0;
+}
+.upper-header .contianer {
+  position: relative;
+}
+
+</style>
+<body>
+    <!-- Container -->
+	<nav class="navbar navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">
+			<img src="Logo.png" style="margin-right: 1000px;" alt="">
+		  </a>
+		</div><div class="search-input" style="bottom: 20px;left: 40px;">
+					<form action="#">
+						<input type="text" placeholder="Type and Search">
+						<input type="submit" value="">
+					</form>
+				</div>
+				
+	  </nav>
+				
+			
+	<div id="container">
+		<div class="nav-border"></div>
+			<div class="container">
+				<!-- Navigation -->
+				<nav id="nav">
+					<ul id="navlist" class="sf-menu clearfix">
+						<li class="current"><a href="../index.html">Home</a>
+							<ul class="sub-menu">
+							</ul>
+						</li>
+						<li><a href="../Shop/shop-grid.html">Shop</a>
+						</li>
+						<li><a href="../gallery/gallery/gridgallery.html">Player Gallaries</a></li>
+						<li><a href="../../Top 10 scores/!0 scores/scores.html">Top 10 Scores</a></li>
+						<!-- <li><a href="Accessories.html">Accesories</a></li> -->
+						<li><a href="../feedback/feedback.html">Feedback</a>
+							
+						</li>
+						<li><a href="../ABOUT/about us.html">About US</a>
+						</li>
+						<li><a href="../Contact Us.html">Contact Us</a></li>
+					</ul>
+				</nav>
+		    	<!-- Navigation -->
+			</div>
+		
+
+		</header>
+		<!-- End Header -->
+    <div class="container main">
+        <div class="box1 pic">
+            <img class="img-fluid" src="images/14.jpg" alt="">
+        </div>
+        <div class="box2 pic">
+            <img src="images/15.jpg" class="img-fluid" alt="">
+
+        </div>
+        <div class="box3 pic">
+            <img src="https://i.pinimg.com/564x/a8/e0/14/a8e014a329ec51efac64edc9f3c7d933.jpg" class="img-fluid" alt="">
+
+        </div>
+        <div class="box4 pic">
+            <img src="images/17.jpg" alt="" class="img-fluid">
+
+        </div>
+        <div class="box5 pic">
+            <img src="images/18.jpg" alt="" class="img-fluid">
+
+        </div>
+        <div class="box6 pic">
+            <img src="images/19.jpg" alt="" class="img-fluid">
+
+        </div>
+        <div class="box7 pic">
+            <img src="https://i.pinimg.com/564x/36/c8/78/36c878d842a8c9c2b439d581adefbc9c.jpg" alt="" class="img-fluid">
+
+        </div>
+        <div class="box8 pic">
+            <img src="images/21.jpg" alt="" class="img-fluid">
+
+
+        </div>
+        <div class="box9 pic">
+            <img src="images/20.jpg" alt="" class="img-fluid">
+
+        </div>
+        <div class="box10 pic">
+            <img src="images/16.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <!-- footer 
+			================================================== -->
+		<footer>
+			<div class="inner-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="f-about">
+								<h1>ABOUT SHOP</h1>
+								<p class="mb20" style="color: white;">We possess within us two minds. So far I have written only of the conscious mind.We further know that the subconscious has recorded every event. This is just perfect theme.</p>
+								<h1>NEWSLETTER</h1>
+								<form action="#">
+									<input type="text" placeholder="Your e-mail">
+									<input type="submit" value="">
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="infos">
+								<h1>Information</h1>
+								<ul style="color: white;">
+									<li > <a href="Shop/shop-grid.html" style="color: white;">• Shop</a></li>
+									<li><a href="picture gallery/picture gallery.html"style="color: white;">• Player Gallery</a></li>
+									<li><a href=""style="color: white;">• Top 10 Scores</a></li>
+									<li><a href="feedback/feedback.html" style="color: white;">• Feedback</a></li>
+									<li><a href="ABOUT.html" style="color: white;">• About Us</a></li>
+									<li><a href="Contact Us.html" style="color: white;">• Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="gettouch">
+								<h1>Get in Touch with us</h1>
+								<p style="color: white;"><i class="fa fa-home"></i> Pakistan,Karachi</p>
+								<p style="color: white;"><i class="fa fa-phone"></i> +92 918 4084 694</p>
+								<p style="color: white;" class="mb20"><i class="fa fa-envelope"></i> soccerverse@gmail.com</p>
+								<h1>FIND US ON</h1>
+								<ul class="footer-socials">
+									<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+									<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="https://support.google.com/answer/2451065?hl=en"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div id="back-to-top">
+	          <a href="#top">Back to Top</a>
+	        </div>
+			</div>
+			<!-- end contanir & inner-footer -->
+			<div class="container">
+				<div class="last-div">
+					<div class="row">
+						<div class="copyright">
+							© 2023 Soccer Verse  |  <a href="#">Designed by Debud Divas</a>
+						</div>
+						<div class="payment">
+							<a href="#"><img src="upload/payments.png" alt=""></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+	        
+		</footer>
+		<!-- End footer -->
+</body>
+</html>

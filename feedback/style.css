@@ -1,0 +1,69 @@
+
+     #Services{
+        width: 100%;
+        padding: 90px 0;
+        background: rgb(136, 127, 127);
+        text-align: center;
+         background-image: url(images/football.jpg); 
+        background-size: cover;
+    }
+    .tittle-text h1{
+        margin: auto;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .tittle-text h1{
+        font-size: 50px;
+        
+    } 
+
+
+
+
+#testimonial{
+    width: 100%;
+    padding: 90px 0;
+}
+.testimonial-row{
+  
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 5px #57575714;
+    cursor: pointer;
+    transition: transform .5s;
+     background : white;
+    
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+ .testimonial-col:hover{
+    transform: translateY(-10px);
+} 
